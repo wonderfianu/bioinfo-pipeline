@@ -1,27 +1,17 @@
-<<<<<<< HEAD
-import numpy as np 
-
-#Quality control 
-def quality_control(seq_data)
-	print('The quality control begins')
-# A simple simultion
-	with open(file_path, 'r') as file: 
-	for line in file:
-	    if len(line) > 10:
-		print(f"this is a low quality read:", line)
-	  print(f"QC completed")
-=======
 import numpy as np
 
-#Quality control
-def quality_control(seq_data)
-        print(f"this is a low quality read:", line)
-# A simple simultion
-        with open(file_path, 'r') as file:
+# Quality control
+def quality_control(file_path):
+    print("The quality control begins")
+
+    # A simple simulations
+    with open(file_path, 'r') as file:
         for line in file:
-            if len(line) > 10:
-                print(f"this is a low quality read:", line)
-          print(f"QC completed")
->>>>>>> variant-module
+            if len(line.strip()) > 10:
+                print("This is a low quality read:", line.strip())
+
+    print("QC completed")
+
+
+# Example usage (test data)
 file = ['ATC', 'TTAC', 'TAGC']
-quality_contol(file)
