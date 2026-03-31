@@ -4,7 +4,7 @@ import numpy as np
 def quality_control(file_path):
     print("The quality control begins")
 
-    # A simple simulation
+    # A simple simulations
     with open(file_path, 'r') as file:
         for line in file:
             if len(line.strip()) > 10:
